@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Chest">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Flat Bench Press"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgBP"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Play Video"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Incline Bench Press"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgIBP"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Cable Chest Fly"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCfly"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Pec Deck Fly"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgPDfly"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Chest Dips"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgChDip"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Play Video"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <FrameLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

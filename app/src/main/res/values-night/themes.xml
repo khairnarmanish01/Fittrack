@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Fittrack" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/darkBlue</item>
+
+        <item name="android:statusBarColor">@color/black</item>
+
+        <item name="actionOverflowButtonStyle">@style/optColor</item>
+    </style>
+
+    <style name="optColor" parent="Widget.AppCompat.Light.ActionButton.Overflow">
+        <item name="tint">@color/white</item>
+    </style>
+
+    <style name="Theme.Fittrack" parent="Base.Theme.Fittrack" />
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardDiet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Shoulders">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Shoulder Press"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/sdps"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Play Video"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Dumbell Front Raises"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dbfr"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Dumbell Lateral Raises"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dblr"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="275dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:text="Rear Lateral Raises"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/rlr"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="275dp"
+            android:background="@color/grey"
+            app:srcCompat="@drawable/play" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/videoFrame"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/black"
+        android:elevation="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

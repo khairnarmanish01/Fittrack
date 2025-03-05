@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardDiet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cards">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBMI"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="12.5dp"
+                    app:srcCompat="@drawable/bmi" />
+
+                <TextView
+                    android:id="@+id/textBMI"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:text="BMI Calculator"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPedo"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="12.5dp"
+                    app:srcCompat="@drawable/pedo" />
+
+                <TextView
+                    android:id="@+id/textPedo"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:text="Pedometer"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWork"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardBMI">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="12.5dp"
+                    app:srcCompat="@drawable/workout" />
+
+                <TextView
+                    android:id="@+id/textWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:text="Workouts"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="20dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardPedo">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="12.5dp"
+                    app:srcCompat="@drawable/diet" />
+
+                <TextView
+                    android:id="@+id/textDiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:text="Diet Plans"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardWater"
+                android:layout_width="150dp"
+                android:layout_height="190dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardWork">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:clickable="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:layout_marginTop="12.5dp"
+                    app:srcCompat="@drawable/water" />
+
+                <TextView
+                    android:id="@+id/textWater"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:gravity="center"
+                    android:text="Water Intake"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:title="Dashboard"
+            app:titleTextColor="@color/white"
+            app:layout_scrollFlags="enterAlways|scroll"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
